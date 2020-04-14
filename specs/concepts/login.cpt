@@ -1,0 +1,5 @@
+#Login with Valid <userid> and <password> and home page should contain <user>
+
+*Goto Flipkart Login Page
+*Login with Valid <userid> and <password>
+*Home Page contains <user>
