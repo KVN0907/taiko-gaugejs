@@ -6,19 +6,19 @@ const headless = process.env.headless_chrome.toLowerCase() === 'true';
 var path = require('path');
 
 beforeSuite(async () => {
-    await openBrowser({ headless: headless })
+    await openBrowser({args:['--window-size=1366,768']})
 });
 
-afterSuite(async () => {
-    await closeBrowser();
-});
+// afterSuite(async () => {
+//     await closeBrowser();
+// });
 
-gauge.customScreenshotWriter = async function () {
-    const screenshotFilePath = path.join(process.env['C:/Users/Keerthivasan.RC/Documents/Taiko-Gauge/reports/html-report/screenshots'], `screenshot-${process.hrtime.bigint()}.png`);
-    await screenshot({ path: screenshotFilePath });
-    return path.basename(screenshotFilePath);
+// gauge.customScreenshotWriter = async function () {
+//     const screenshotFilePath = path.join(process.env['C:/Users/Keerthivasan.RC/Documents/Taiko-Gauge/reports/html-report/screenshots'], `screenshot-${process.hrtime.bigint()}.png`);
+//     await screenshot({ path: screenshotFilePath });
+//     return path.basename(screenshotFilePath);
 
-};
+// };
 
 
 step("Login with Valid <userid> and <password> and home Page should contain <user>", async (email, password,user) => {
@@ -31,7 +31,7 @@ step("Login with Valid <userid> and <password> and home Page should contain <use
    await write(password)
    await press('Enter');
    assert.ok(await text(user).exists());
-   gauge.screenshot();
-
 });
+
+
 

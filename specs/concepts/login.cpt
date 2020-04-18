@@ -3,3 +3,8 @@
 *Goto Flipkart Login Page
 *Login with Valid <userid> and <password>
 *Home Page contains <user>
+
+#Search for <product>  navigate to product list page and  select <productSpec>
+
+* Search for <product> 
+* Select the <productSpec>
