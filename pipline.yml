@@ -11,9 +11,10 @@ steps:
         echo deb https://dl.bintray.com/gauge/gauge-deb stable main | sudo tee -a /etc/apt/sources.list
         sudo apt-get update
         sudo apt-get install gauge
+        sudo npm install
     displayName: 'install gauge'
 
 -   script: |
         echo starting gauge test
-        gauge run specs
+        npm test
     displayName: 'gauge test'
