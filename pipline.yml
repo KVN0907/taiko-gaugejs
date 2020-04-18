@@ -12,7 +12,8 @@ steps:
         sudo apt-get update
         sudo apt-get install gauge
         sudo npm install
-    displayName: 'install gauge'
+        sudo taiko -v
+    displayName: 'install gauge and taiko'
 
 -   script: |
         echo starting gauge test
