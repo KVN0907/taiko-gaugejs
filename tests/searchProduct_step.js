@@ -13,9 +13,7 @@ afterSuite(async () => {
     await closeBrowser();
 });
 
- gauge.screenshotFn = async function() {
-    return await screenshot({ encoding: 'base64' });
-};
+ 
 
 step("Goto Flipkart Login Page", async () => {
     await goto('https://flipkart.com');
