@@ -1,0 +1,11 @@
+#Navigate to <category> and select <subcategory> and Validate <pageHeader>
+
+*Navigate to the <category> select <subcategory>
+*Validate the pageheader <pageHeader>
+
+
+#Filter by price with <minrate> and <maxrate> , and subfilter <type> and select the first product
+
+* Select the <minrate> and <maxrate>
+* Select the subfilter <type> and select the first product
+
