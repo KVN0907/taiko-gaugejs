@@ -11,4 +11,3 @@ To login to Flipkart home page
 *Goto Flipkart Login Page
 *Login with Valid <userid> and <password>
 *Home Page contains <user>
-
